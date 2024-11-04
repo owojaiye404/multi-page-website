@@ -13,8 +13,10 @@ body {
 
 /* Make header full width */
 header {
+  position: sticky;
+  z-index: 99;
   top: 0;
-  background-color: black;
+  background-color: white;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
 }
@@ -42,7 +44,7 @@ header {
 
 .logo h1 {
   font-size: 1.5rem;
-  color: white;
+  color: black;
   margin: 0;
 }
 
@@ -58,7 +60,7 @@ header {
 
 .navigation li a {
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.2rem;
 }
 
@@ -66,9 +68,10 @@ header {
   border-bottom: 2px solid crimson;
 }
 
-.navigation .about {
+.navigation .services {
   border-bottom: 2px solid crimson;
 }
+
 .banner {
   width: 100%;
   position: relative;
@@ -81,52 +84,32 @@ header {
 .main-container {
   padding: 1.5rem;
 }
+.main-container ol {
+  list-style: none;
+}
 .main-container h2 {
   font-size: 2.5rem;
 }
+.main-container h3 {
+  font-size: 1.6rem;
+}
+.main-container span {
+  font-weight: bold;
+  font-size: 20px;
+}
 .main-container p {
-  line-height: 1.7rem;
-  font-size: 18px;
+  line-height: 2rem;
+  font-size: 20px;
 }
-
-.images-container {
-  text-align: center;
-  margin: 15px 0;
-  white-space: nowrap;
-}
-.images-container li {
-  display: inline-block;
-  width: 45%;
-  margin: 20px;
-}
-.images-container li img {
-  max-width: 100%;
-  border-radius: 10px;
-}
-.images-container li:hover {
-  position: relative;
-  top: -4px;
-}
-.team {
-  padding: 0 0 0 1.5rem;
-}
-.team h2 {
-  font-size: 2.5rem;
-  padding: 0 0 10px 0;
-}
-.team h3 {
-  font-size: 1.4rem;
-  padding: 0;
-  margin: 0;
-}
-.team p {
-  padding: 0 0 15px 0;
-  font-size: 18px;
+.main-container li {
+  padding-bottom: 25px;
+  font-size: 20px;
+  padding-left: 10px;
 }
 
 footer {
-  background: black;
-  color: white;
+  background: white;
+  color: black;
   padding: 10px;
   text-align: center;
   font-size: 1.2rem;
