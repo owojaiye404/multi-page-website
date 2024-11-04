@@ -1,0 +1,117 @@
+/* General Reset and Container */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #eee;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Header */
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header {
+  z-index: 99;
+  position: sticky;
+  top: 0;
+  background-color: rgb(210, 230, 238);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.logo span {
+  color: crimson;
+}
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: #082032;
+  font-size: 1.2rem;
+}
+
+.navigation li a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.navigation .home {
+  border-bottom: 2px solid crimson;
+}
+/* Background image for the entire page */
+body {
+  background-image: url("imgs/justin-wang-7e9TPmPWWjs-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: Arial, sans-serif;
+}
+
+.welcome {
+  padding: 0 20px;
+}
+main {
+  max-width: 800px; /* Limits width for better readability */
+}
+
+main h1 {
+  font-size: 2rem;
+  color: #082032; /* Primary color */
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+main p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b4b4b;
+  margin-left: 40px;
+  max-width: 700px;
+}
+.images {
+  text-align: center;
+  margin: 20px 0;
+  white-space: nowrap;
+}
+.images li {
+  display: inline-block;
+  width: 46.7%;
+  margin: 20px 20px;
+}
+.images li img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.images li:hover {
+  position: relative;
+  top: -4px;
+}
+footer {
+  background: rgb(210, 230, 238);
+  color: #082032;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
