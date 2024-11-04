@@ -1,0 +1,133 @@
+/* General Reset */
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(224, 219, 219);
+  min-height: 100vh;
+}
+
+/* Make header full width */
+header {
+  top: 0;
+  background-color: black;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+}
+
+/* Container for header content */
+.container.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
+}
+
+/* New Flex Container for Image and Logo */
+.header-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between the image and the logo */
+}
+
+.container.header img {
+  width: 80px;
+  border-radius: 50%;
+  display: block;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+.logo span {
+  color: crimson;
+}
+
+.navigation {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.navigation li a:hover {
+  border-bottom: 2px solid crimson;
+}
+
+.navigation .about {
+  border-bottom: 2px solid crimson;
+}
+.banner {
+  width: 100%;
+  position: relative;
+}
+.banner img {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+}
+.main-container {
+  padding: 1.5rem;
+}
+.main-container h2 {
+  font-size: 2.5rem;
+}
+.main-container p {
+  line-height: 1.7rem;
+  font-size: 18px;
+}
+
+.images-container {
+  text-align: center;
+  margin: 15px 0;
+  white-space: nowrap;
+}
+.images-container li {
+  display: inline-block;
+  width: 45%;
+  margin: 20px;
+}
+.images-container li img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.images-container li:hover {
+  position: relative;
+  top: -4px;
+}
+.team {
+  padding: 0 0 0 1.5rem;
+}
+.team h2 {
+  font-size: 2.5rem;
+  padding: 0 0 10px 0;
+}
+.team h3 {
+  font-size: 1.4rem;
+  padding: 0;
+  margin: 0;
+}
+.team p {
+  padding: 0 0 15px 0;
+  font-size: 18px;
+}
+
+footer {
+  background: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.2rem;
+}
